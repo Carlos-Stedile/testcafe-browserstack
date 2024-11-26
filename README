@@ -1,0 +1,1 @@
+To run just execute this command: npx testcafe "browserHere" testSuite; Example: npx testcafe "browserstack:iPhone 16 Plus@18" ./E2E/example/test.test.ts

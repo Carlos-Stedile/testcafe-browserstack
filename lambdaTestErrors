@@ -1,0 +1,89 @@
+npm run test:e2e:lambdatest
+
+> @blings/blings-player@4.25.7-d.1 test:e2e:lambdatest /home/gabriel/Trabalho/Blings/player
+> ts-node ./tests/E2E/testRunner.ts -on -b lambdatest
+
+Preparing to run the tests
+Browsers defined -b
+testSuites [
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/autoFullscreen.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/autoPlay.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/basicActions.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/browserStackTest.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/dataChangeDynamicScene.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/datapoint.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/dynamicData.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/dynamicScenes.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/fontLoad.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/input.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/rightToLeft.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/storyMode.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/ui.test.ts',
+  '/home/gabriel/Trabalho/Blings/player/tests/E2E/suites/variant.test.ts'
+]
+Running online tests
+Current version of Node Tunnel:  4.0.8
+Verifying credentials
+Auth succeeded
+Checking for updates
+Binary already at latest version
+Starting tunnel
+Tunnel successfully initiated. You can start testing now
+capabilities {
+  tunnel: true,
+  plugin: 'testcafe-browser-provider-lambdatest:3.0.1',
+  isRealMobile: true,
+  browserName: 'chrome',
+  platformName: 'android',
+  deviceName: 'Galaxy S24',
+  platformVersion: '14',
+  name: 'TestCafe test run Pn6Uu-h',
+  tunnelName: 'TestCafe0_carlosblings-1731241213334'
+}
+capabilities {
+  tunnel: true,
+  plugin: 'testcafe-browser-provider-lambdatest:3.0.1',
+  isRealMobile: true,
+  browserName: 'safari',
+  platformName: 'ios',
+  deviceName: 'iPhone 16',
+  platformVersion: '18',
+  name: 'TestCafe test run mx1onG2',
+  tunnelName: 'TestCafe0_carlosblings-1731241213334'
+}
+Error: [init({"tunnel":true,"plugin":"testcafe-browser-provider-lambdatest:3.0.1","isRealMobile":true,"browserName":"chrome","platformName":"android","deviceName":"Galaxy S24","platformVersion":"14","name":"TestCafe test run Pn6Uu-h","tunnelName":"TestCafe0_carlosblings-1731241213334"})] The environment you requested was unavailable.
+    at /home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/lib/webdriver.js:157:15
+    at Request._callback (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/lib/http-utils.js:89:7)
+    at Request.self.callback (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:400:28)
+    at Request.emit (domain.js:475:12)
+    at Request.<anonymous> (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/node_modules/request/request.js:1161:10)
+    at Request.emit (events.js:400:28)
+    at Request.emit (domain.js:475:12)
+    at IncomingMessage.<anonymous> (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/node_modules/request/request.js:1083:12)
+    at Object.onceWrapper (events.js:519:28)
+Error: Unable to open the "lambdatest:Galaxy S24@14:android:isReal" browser due to the following error:
+
+Error: [init({"tunnel":true,"plugin":"testcafe-browser-provider-lambdatest:3.0.1","isRealMobile":true,"browserName":"chrome","platformName":"android","deviceName":"Galaxy S24","platformVersion":"14","name":"TestCafe test run Pn6Uu-h","tunnelName":"TestCafe0_carlosblings-1731241213334"})] The environment you requested was unavailable.
+    at /home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/lib/webdriver.js:157:15
+    at Request._callback (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/lib/http-utils.js:89:7)
+    at Request.self.callback (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:400:28)
+    at Request.emit (domain.js:475:12)
+    at Request.<anonymous> (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/node_modules/request/request.js:1161:10)
+    at Request.emit (events.js:400:28)
+    at Request.emit (domain.js:475:12)
+    at IncomingMessage.<anonymous> (/home/gabriel/Trabalho/Blings/player/tests/node_modules/wd/node_modules/request/request.js:1083:12)
+    at Object.onceWrapper (events.js:519:28)
+    at BrowserConnection._runBrowser (/home/gabriel/Trabalho/Blings/player/tests/node_modules/testcafe/src/browser/connection/index.ts:291:32)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @blings/blings-player@4.25.7-d.1 test:e2e:lambdatest: `ts-node ./tests/E2E/testRunner.ts -on -b lambdatest`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @blings/blings-player@4.25.7-d.1 test:e2e:lambdatest script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gabriel/.npm/_logs/2024-11-10T12_20_24_908Z-debug.log

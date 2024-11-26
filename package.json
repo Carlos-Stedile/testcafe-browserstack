@@ -1,0 +1,34 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "ts-node ./E2E/testRunner.ts",
+    "test:all": "ts-node ./E2E/testRunner.ts -a-b",
+    "test:firefox": "ts-node ./E2E/testRunner.ts -b firefox",
+    "test:firefox-h": "ts-node ./E2E/testRunner.ts -b firefox:headless",
+    "test:chrome": "ts-node ./E2E/testRunner.ts -b chrome",
+    "test:chrome-h": "ts-node ./E2E/testRunner.ts -b chrome:headless",
+    "test:chromium": "ts-node ./E2E/testRunner.ts -b chromium",
+    "test:chromium-h": "ts-node ./E2E/testRunner.ts -b chrome:headless",
+    "test:remote": "ts-node ./E2E/testRunner.ts -b remote",
+    "test:lambdatest": "ts-node ./E2E/testRunner.ts -on -b lambdatest",
+    "test:browserStack": "ts-node ./E2E/testRunner.ts -on -b browserstack -t browserStackTest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/qrcode-terminal": "^0.12.0",
+    "testcafe": "^3.6.2",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "testcafe-browser-provider-browserstack": "^1.15.2",
+    "testcafe-browser-provider-lambdatest": "^3.0.1",
+    "testcafe-browser-provider-sauce": "^0.3.0",
+    "testcafe-browser-provider-testingbot": "^2.1.0",
+    "testcafe-reporter-saucelabs": "^3.3.0"
+  }
+}
